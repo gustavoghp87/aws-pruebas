@@ -1,0 +1,25 @@
+{
+  "name": "aws-pruebas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AWS DynamoDB.js",
+  "dependencies": {
+    "aws-sdk": "^2.747.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "backend": "nodemon index.js",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
